@@ -1,0 +1,321 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#080611">
+<title>NextGen India | Future Starts Here</title>
+<meta name="description" content="Welcome to NextGen India - Technology, Innovation and Future Business.">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #080611;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+:root {
+  --purple: #b026ff;
+  --cyan: #00eaff;
+  --bg: #080611;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 7%;
+  background: rgba(8,6,17,0.92);
+  border-bottom: 1px solid #322044;
+  backdrop-filter: blur(12px);
+}
+
+.logo {
+  font-size: 23px;
+  font-weight: bold;
+  color: var(--cyan);
+  text-shadow: 0 0 12px var(--cyan);
+}
+
+nav {
+  display: flex;
+  gap: 22px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  transition: .3s;
+}
+
+nav a:hover {
+  color: var(--cyan);
+}
+
+.hero {
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 65px 20px;
+  background:
+    radial-gradient(ellipse at 50% 40%, #50127c55, transparent 60%);
+}
+
+.tag {
+  color: var(--cyan);
+  border: 1px solid var(--cyan);
+  padding: 9px 18px;
+  border-radius: 30px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  box-shadow: 0 0 12px #00eaff55;
+}
+
+.hero h1 {
+  font-size: clamp(38px, 9vw, 75px);
+  margin: 28px 0 15px;
+  background: linear-gradient(90deg, #00eaff, #c13cff, #ff5edb);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0 0 15px #a020ff66);
+}
+
+.hero p {
+  color: #b9b2c9;
+  max-width: 600px;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 28px;
+  padding: 14px 27px;
+  border: 1px solid var(--cyan);
+  border-radius: 30px;
+  color: white;
+  background: #00eaff18;
+  text-decoration: none;
+  box-shadow: 0 0 15px #00eaff55;
+  transition: .3s;
+}
+
+.btn:hover {
+  background: var(--cyan);
+  color: #080611;
+  box-shadow: 0 0 30px var(--cyan);
+}
+
+section {
+  padding: 75px 7%;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 32px;
+  color: var(--cyan);
+  text-shadow: 0 0 12px #00eaff77;
+  margin-bottom: 35px;
+}
+
+.about {
+  text-align: center;
+  max-width: 850px;
+  margin: auto;
+  color: #c6bfd1;
+  line-height: 1.9;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 22px;
+}
+
+.card {
+  padding: 30px 22px;
+  background: linear-gradient(145deg, #171025, #0c0a15);
+  border: 1px solid #612c85;
+  border-radius: 18px;
+  text-align: center;
+  transition: .3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  border-color: var(--cyan);
+  box-shadow: 0 0 22px #9c25ff55;
+}
+
+.card .emoji {
+  font-size: 42px;
+  margin-bottom: 17px;
+}
+
+.card h3 {
+  color: #d78aff;
+  margin-bottom: 12px;
+}
+
+.card p {
+  color: #aaa2b9;
+  line-height: 1.7;
+  font-size: 14px;
+}
+
+.contact {
+  text-align: center;
+  background: radial-gradient(ellipse at center, #48136c44, transparent 70%);
+}
+
+.contact p {
+  color: #b9b2c9;
+  line-height: 1.8;
+}
+
+footer {
+  text-align: center;
+  padding: 25px 15px;
+  border-top: 1px solid #382348;
+  color: #9990a8;
+  font-size: 13px;
+}
+
+footer span {
+  color: var(--cyan);
+}
+
+@media(max-width:600px) {
+  header {
+    padding: 16px 4%;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  nav {
+    width: 100%;
+    justify-content: space-between;
+    gap: 8px;
+  }
+
+  nav a {
+    font-size: 12px;
+  }
+
+  .hero {
+    min-height: 75vh;
+  }
+
+  section {
+    padding: 55px 5%;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">NextGen India.</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+
+<section class="hero" id="home">
+  <div class="tag">WELCOME TO THE FUTURE</div>
+  <h1>NextGen India</h1>
+  <p>
+    Dream Big. Think Smart. Build The Future.
+    A new generation of technology, creativity
+    and innovation starts here.
+  </p>
+  <a href="#projects" class="btn">Explore My World ↗</a>
+</section>
+
+<section id="about">
+  <h2 class="section-title">About Us</h2>
+  <div class="about">
+    <p>
+      Welcome to NextGen India! This is a growing
+      digital platform built with creativity,
+      technology and big dreams. Our mission is
+      to learn, create and explore new possibilities
+      for a better future.
+    </p>
+  </div>
+</section>
+
+<section id="projects">
+  <h2 class="section-title">Our Projects</h2>
+  <div class="cards">
+
+    <div class="card">
+      <div class="emoji">💻</div>
+      <h3>Web Development</h3>
+      <p>Creating modern websites and digital experiences.</p>
+    </div>
+
+    <div class="card">
+      <div class="emoji">⚡</div>
+      <h3>Technology</h3>
+      <p>Exploring electronics, gadgets and new technology.</p>
+    </div>
+
+    <div class="card">
+      <div class="emoji">🚀</div>
+      <h3>Innovation</h3>
+      <p>Turning creative ideas into useful projects.</p>
+    </div>
+
+    <div class="card">
+      <div class="emoji">🏢</div>
+      <h3>Future Business</h3>
+      <p>Learning business skills and building new opportunities.</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <h2 class="section-title">Let's Connect</h2>
+  <p>
+    Every big journey starts with a small step.<br>
+    Welcome to NextGen India.
+  </p>
+  <a class="btn" href="mailto:hello@example.com">
+    Contact Us ✉
+  </a>
+</section>
+
+</main>
+
+<footer>
+  © 2026 <span>NextGen India</span>. All Rights Reserved.
+  <p style="margin-top:8px">Built with passion and creativity.</p>
+</footer>
+
+</body>
+</html>
